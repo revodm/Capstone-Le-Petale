@@ -66,6 +66,7 @@ header {
 }
 .navbar a:hover {
   background: var(--main-color);
+  color: var(--bg-color);
   border-radius: 0.2rem;
   transition: 0.2s all linear;
 }
@@ -119,7 +120,7 @@ header {
 .home {
   width: 100vw;
   min-height: 100vh;
-  background: url(./images/bgflo.jpeg);
+  background: url(/images/bgflo.jpeg);
   background-size: cover;
   background-position: center;
 }
@@ -127,6 +128,7 @@ header {
 .home-text h1 {
   font-size: 3.4rem;
   color: #c07f2a;
+  background-color: rgba(0, 0, 0, 0.4);
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -134,7 +136,7 @@ header {
 }
 .home-text p {
   font-size: 0.938rem;
-  color: var(--text-color);
+  color: var(--bg-color);
   margin: 0.5rem 0 1.4rem;
   text-align: center;
 }
@@ -153,12 +155,17 @@ header {
   background: var(--main-color);
   color: var(--bg-color);
   font-weight: 500;
+  text-decoration: none;
 }
 
 .btn:hover {
   background: #8a6f4d;
 }
 
+.btn1:hover {
+  background: #8a6f4d;
+  color: var(--bg-color);
+}
 /* ABOUT US */
 .about {
   display: grid;
@@ -256,35 +263,35 @@ header {
 .img1 {
   grid-area: img1;
   min-height: 50.5rem;
-  background-image: url(./images/wed.jpg);
+  background-image: url(/images/wed.jpg);
 }
 .img2 {
   grid-area: img2;
-  background-image: url(./images/thanksgiving.jpeg);
+  background-image: url(/images/thanksgiving.jpeg);
 }
 .img3 {
   grid-area: img3;
-  background-image: url(./images/valentines.jpg);
+  background-image: url(/images/valentines.jpg);
 }
 .img4 {
   grid-area: img4;
-  background-image: url(./images/sympathy.jpeg);
+  background-image: url(/images/sympathy.jpeg);
 }
 .img5 {
   grid-area: img5;
-  background-image: url(./images/bundled.jpg);
+  background-image: url(/images/bundled.jpg);
 }
 .img6 {
   grid-area: img6;
-  background-image: url(./images/regular.jpeg);
+  background-image: url(/images/regular.jpeg);
 }
 .img7 {
   grid-area: img7;
-  background-image: url(./images/party\ event.jpeg);
+  background-image: url(/images/party\ event.jpeg);
 }
 .img8 {
   grid-area: img8;
-  background-image: url(./images/add-ons.jpeg);
+  background-image: url(/images/add-ons.jpeg);
 }
 @media screen and (min-width: 900px) {
   .box {
@@ -423,4 +430,39 @@ header {
   padding: 20px;
   text-align: center;
   background: var(--secondary-color);
+}
+
+@media (min-width: 1025px) {
+  .h-custom {
+    height: 100vh !important;
+  }
+}
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+}
+
+.card-registration .select-arrow {
+  top: 13px;
+}
+
+.bg-grey {
+  background-color: #eae8e8;
+}
+
+@media (min-width: 992px) {
+  .card-registration-2 .bg-grey {
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+}
+
+@media (max-width: 991px) {
+  .card-registration-2 .bg-grey {
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
 }
